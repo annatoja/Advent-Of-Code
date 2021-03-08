@@ -20,5 +20,4 @@ for i in range(len(numbers)):
         while part_fuel >= 0:
             result += part_fuel
             part_fuel = fuel_counter(part_fuel)
-
 print(result)
