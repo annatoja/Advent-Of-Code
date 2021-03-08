@@ -10,15 +10,15 @@ def fuel_counter(num):
     return fuel
 
 
-res = 0
+result = 0
 
 for i in range(len(numbers)):
-    a = fuel_counter(numbers[i])
-    if a < 9:
-        res += a
+    part_fuel = fuel_counter(numbers[i])
+    if part_fuel < 9:
+        result += part_fuel
     else:
-        while a >= 0:
-            res += a
-            a = fuel_counter(a)
+        while part_fuel >= 0:
+            result += part_fuel
+            part_fuel = fuel_counter(part_fuel)
 
-print(res)
+print(result)
